@@ -16,10 +16,10 @@ int time_step = 2500 ; // reading every 2.5s
 long time = 0;
 
 void setup() {
-Serial.begin(9600); // setup serial baudrate
+    Serial.begin(9600); // setup serial baudrate
 
-lcd.init(); // initialize the lcd 
-lcd.backlight(); //turn on backlight of LCD
+    lcd.init(); // initialize the lcd 
+    lcd.backlight(); //turn on backlight of LCD
 }
 
 void loop() {
@@ -49,5 +49,5 @@ void loop() {
         lcd.print("LOAD: "+String(load_Strain1)+" kg");
 
         time = millis();
-        }
+    }
 }
